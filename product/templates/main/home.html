@@ -1,2 +1,28 @@
+<html>
+<head>
+    <title>Home Page</title>
+    {% load static %}
+<link  href ="{% static 'src/styles.css' %}" rel="stylesheet" />
+</head>
 
-<p> Tg=his is Home page</p>
+<body>
+{% include "components/_navbar.html" %}
+<div class="flex justify-center items-center flex-wrap" >
+    {% include "components/_card.html" %}
+    {% include "components/_card.html" %}
+
+    {% include "components/_card.html" %}
+
+    {% include "components/_card.html" %}
+
+    {% include "components/_card.html" %}
+
+    {% include "components/_card.html" %}
+
+
+</div>
+{% include "components/_footer.html" %}
+</body>
+
+
+</html>
